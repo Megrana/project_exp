@@ -1,0 +1,35 @@
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Program Files\STM MDK\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+user\main.c(27): error:  #29: expected an expression
+      OLED_ShowString(0,0, "bottle:", 
+LED_8X16);
+user\main.c(37): error:  #29: expected an expression
+              OLED_ShowString(0, 16, "can bottle",
+LED_8X16);
+user\main.c(49): error:  #29: expected an expression
+  				 OLED_ShowNum(58, 0, weight, 4, 
+LED_8X16);
+user\main.c(52): error:  #29: expected an expression
+  									OLED_ShowString(0, 16, "empty               ", 
+LED_8X16); 
+user\main.c(57): error:  #29: expected an expression
+  							OLED_ShowString(0, 16, "plastic bottle", 
+LED_8X16);
+user\main.c(66): error:  #29: expected an expression
+  					OLED_ShowString(0, 16, "glass bottle    ", 
+LED_8X16);
+user\main.c: 0 warnings, 6 errors
+compiling METAL.c...
+compiling OLED.c...
+Hardware\OLED.c(480): error:  #29: expected an expression
+  	if (FontSize == 
+LED_8X16)		//字体为宽8像素，高16像素
+Hardware\OLED.c(485): error:  #29: expected an expression
+  	else if(FontSize == 
+LED_6X8)	//字体为宽6像素，高8像素
+Hardware\OLED.c: 0 warnings, 2 errors
+compiling HX711.c...
+".\Objects\project.axf" - 8 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:01
